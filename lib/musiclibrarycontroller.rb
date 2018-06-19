@@ -91,11 +91,11 @@ def list_songs_by_genre
 def play_song
   puts "Which song number would you like to play?"
   response = gets.strip
-  song = Song.all.sort{|a,b| a.name <=> b.name}[0]
-  binding.pry
+  song = Song.all.sort{|a,b| a.name <=> b.name}[response-1]
+  
   #.each do |song|
   #  if response == song.name
-  #    puts "Playing #{song.name} by #{song.artist.name}"
+     puts "Playing #{song.name} by #{song.artist.name}"
   #  end
   # end
 end
