@@ -97,7 +97,7 @@ def play_song
   #  if response == song.name
   #    puts "Playing #{song.name} by #{song.artist.name}"
   #  end
-  # zaend
+  # end
 end
 
 end
