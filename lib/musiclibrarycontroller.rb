@@ -92,7 +92,7 @@ def play_song
   puts "Which song number would you like to play?"
   response = gets.strip.to_i
   song = Song.all.sort{|a,b| a.name <=> b.name}[response-1]
-  
+
   #.each do |song|
   #  if response == song.name
      puts "Playing #{song.name} by #{song.artist.name}"
